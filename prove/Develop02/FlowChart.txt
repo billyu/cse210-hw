@@ -25,24 +25,24 @@
   +-------------------+
             |
             v
-  +--------Decision--------+
-  | Choice = 1 (Write)     |
-  +--------Yes-------------+
+  +--------Decision--------+   Yes
+  | Choice = 1 (Write)     |-------> Write Journal
+  +------------------------+
             | No
             v
-  +--------Decision--------+
-  | Choice = 2 (Display)   |
-  +--------Yes-------------+
+  +--------Decision--------+   Yes
+  | Choice = 2 (Display)   |-------> Display Journal
+  +------------------------+
             | No
             v
-  +--------Decision--------+
-  | Choice = 3 (Load)      |
-  +--------Yes-------------+
+  +--------Decision--------+   Yes
+  | Choice = 3 (Load)      |-------> Load Journal
+  +------------------------+
             | No
             v
-  +--------Decision--------+
-  | Choice = 4 (Save)      |
-  +--------Yes-------------+
+  +--------Decision--------+   Yes
+  | Choice = 4 (Save)      |-------> Save Journal
+  +------------------------+
             | No
             v
   +--------Decision--------+   Yes
