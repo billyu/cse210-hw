@@ -1,0 +1,38 @@
++----------------------------------+
+|           <<class>>              |
+|             Journal              |
++----------------------------------+
+| -_journalName: string            |
+| -_entries: List<Entry>           |
++----------------------------------+
+| +Journal()                       |
+| +Journal(journalName: string)    |
+| +AddEntry(entryDate: DateTime,   |
+|           entryText: string,     |
+|           entryPrompt: string)   |
+| +DisplayJournal(): void          |
+| +ToJson(): string                |
+| +SaveJournal(fileName: string):  |
+|           void                   |
+| +LoadJournal(fileName: string):  |
+|           Journal                |
+| +GeneratePrompt(): string        |
++----------------------------------+
+                |
+                |
+                v
++----------------------------------+
+|           <<class>>              |
+|             Entry                |
++----------------------------------+
+| -_entryDate: DateTime            |
+| -_entryText: string              |
+| -_entryPrompt: string            |
++----------------------------------+
+| +Entry()                         |
+| +Entry(entryDate: DateTime,      |
+|        entryText: string,        |
+|        entryPrompt: string)      |
+| +DisplayEntry(): void            |
+| +ToJson(): string                |
++----------------------------------+

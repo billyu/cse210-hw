@@ -3,7 +3,6 @@ public class Job {
     private string _companyName;
     private string _startDate;
     private string _endDate;
-    private string _jobDescription;
 
     public Job(string jobTitle, string companyName, string startDate, string endDate) {
         _jobTitle = jobTitle;
@@ -26,10 +25,6 @@ public class Job {
 
     public string GetEndDate() {
         return _endDate;
-    }
-
-    public string GetJobDescription() {
-        return _jobDescription;
     }
 
     public void DisplayJobDetail() {
