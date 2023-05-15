@@ -18,26 +18,26 @@ using System.Text.Json;
 
 public class Entry {
     // Define member variables here.
-    public DateTime _entryDate { get; set;}
-    public string _entryText { get; set;}
-    public string _entryPrompt { get; set;}
+    public DateTime EntryDate { get; set;}
+    public string EntryText { get; set;}
+    public string EntryPrompt { get; set;}
 
     // Define constructor here.
     public Entry() {
-        _entryDate = DateTime.Now;
-        _entryText = "";
-        _entryPrompt = "";
+        EntryDate = DateTime.Now;
+        EntryText = "";
+        EntryPrompt = "";
     }
     public Entry(DateTime entryDate, string entryText, string entryPrompt) {
-        _entryDate = entryDate;
-        _entryText = entryText;
-        _entryPrompt = entryPrompt;
+        EntryDate = entryDate;
+        EntryText = entryText;
+        EntryPrompt = entryPrompt;
     }
 
     // Display journal entry
     public void DisplayEntry() {
-        Console.WriteLine($"{_entryDate} - {_entryPrompt}");
-        Console.WriteLine(_entryText);
+        Console.WriteLine($"{EntryDate} - {EntryPrompt}");
+        Console.WriteLine(EntryText);
     }
 
     // Convert the object to JSON

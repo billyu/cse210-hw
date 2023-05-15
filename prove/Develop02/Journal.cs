@@ -22,29 +22,29 @@ using System.Text.Json;
 
 public class Journal {
     // Define member variables here.
-    public string _journalName { get; set;}
-    public List<Entry> _entries { get; set;}
+    public string JournalName { get; set;}
+    public List<Entry> Entries { get; set;}
 
     // Define constructor here.
     public Journal() {
-        _journalName = "";
-        _entries = new List<Entry>();
+        JournalName = "";
+        Entries = new List<Entry>();
     }
     public Journal(string journalName) {
-        _journalName = journalName;
-        _entries = new List<Entry>();
+        JournalName = journalName;
+        Entries = new List<Entry>();
     }
 
     // Add a new entry to the journal
     public void AddEntry(DateTime entryDate, string entryText, string entryPrompt) {
         Entry newEntry = new Entry(entryDate, entryText, entryPrompt);
-        _entries.Add(newEntry);
+        Entries.Add(newEntry);
     }
 
     // Display all entries in the journal
     public void DisplayJournal() {
-        Console.WriteLine($"Journal: {_journalName}");
-        foreach (Entry entry in _entries) {
+        Console.WriteLine($"Journal: {JournalName}");
+        foreach (Entry entry in Entries) {
             entry.DisplayEntry();
         }
     }

@@ -1,15 +1,1 @@
-{
-    "_journalName": "Bill\u0027s Journal",
-    "_entries": [
-        {
-            "_entryDate": "2023-05-06T06:46:11.5301229+08:00",
-            "_entryText": "I will strive to get up earlier tomorrw, at 6:00am.",
-            "_entryPrompt": "What is one thing I can do tomorrow to make it better than today?"
-        },
-        {
-            "_entryDate": "2023-05-06T06:46:40.5877549+08:00",
-            "_entryText": "I love my four wonderful children, they are the most beautiful in the world.",
-            "_entryPrompt": "What was the most beautiful thing I saw today?"
-        }
-    ]
-}
+{"JournalName":"Bill\u0027s Journal","Entries":[{"EntryDate":"2023-05-15T22:00:49.3196185+08:00","EntryText":"I would paid more attention to my kids.","EntryPrompt":"If I had one thing I could do over today, what would it be?"},{"EntryDate":"2023-05-15T22:01:06.1411205+08:00","EntryText":"I would treated my wife better!","EntryPrompt":"If I had one thing I could do over today, what would it be?"}]}
