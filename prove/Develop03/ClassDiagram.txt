@@ -1,0 +1,49 @@
++----------------------------------------------+
+|                  <<class>>                   |
+|                 Reference                    |
++----------------------------------------------+
+| -_bookName: string                           |
+| -_chapter: int                               |
+| -_verseStart: int                            |
+| -_verseEnd: int?                             |
++----------------------------------------------+
+| +Reference(bookName: string,                 |
+|            chapter: int, verse: int)         |
+| +Reference(bookName: string,                 |
+|            chapter: int,                     |
+|            verseStart: int, verseEnd: int)   |
+| +ToText(): string                            |
++----------------------------------------------+
+                      |
+                      |
+                      v
++----------------------------------------------+
+|                  <<class>>                   |
+|                Scripture                     |
++----------------------------------------------+
+| -_reference: Reference                       |
+| -_words: List<Word>                          |
++----------------------------------------------+
+| +Scripture(reference: Reference,             |
+|            text: string)                     |
+| +HideWords(n: int): void                     |
+| +ShowAllWords(): void                        |
+| +IsFullyHidden(): bool                       |
+| +ToText(): string                            |
++----------------------------------------------+
+                      ^
+                      |
+                      |
++----------------------------------------------+
+|                  <<class>>                   |
+|                   Word                       |
++----------------------------------------------+
+| -_content: string                            |
+| -_visible: bool                              |
++----------------------------------------------+
+| +Word(content: string)                       |
+| +Hide(): void                                |
+| +Show(): void                                |
+| +IsVisible(): bool                           |
+| +ToText(): string                            |
++----------------------------------------------+
