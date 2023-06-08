@@ -38,7 +38,9 @@ class Program
             if (input == "start")
             {
                 scripture.ShowAllWords();
-            } else {
+            }
+            else
+            {
                 // Otherwise, hide a few words
                 scripture.HideWords(3);
             }
