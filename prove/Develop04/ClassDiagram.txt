@@ -1,0 +1,65 @@
++------------------------------------+
+|            <<class>>               |
+|             Activity               |
++------------------------------------+
+| -_name: string                     |
+| -_description: string              |
+| -_duration: int                    |
++------------------------------------+
+| +Activity(name: string,            |
+|            description: string)    |
+| +DisplayWelcomeMessage(): void     |
+| +DisplayCompleteMessage(): void    |
+| #CountDown(seconds: int): void     |
+| #Spinner(seconds: int): void       |
+| #GetReadyPrompt(): void            |
++------------------------------------+
+                ^
+                |
++------------------------------------+
+|            <<class>>               |
+|        BreathingActivity           |
++------------------------------------+
+| +BreathingActivity()               |
+| +Start(): void                     |
++------------------------------------+
+
+
++------------------------------------+
+|            <<class>>               |
+|             Activity               |
++------------------------------------+
+                ^
+                |
++------------------------------------+
+|            <<class>>               |
+|        ReflectingActivity          |
++------------------------------------+
+| -_prompts: string[]                |
+| -_questions: string[]              |
+| -_random: Random                   |
++------------------------------------+
+| +ReflectingActivity()              |
+| +Start(): void                     |
+| -GetRandomPrompt(): string         |
+| -ShuffleQuestions(): void          |
++------------------------------------+
+
+
++------------------------------------+
+|            <<class>>               |
+|             Activity               |
++------------------------------------+
+                ^
+                |
++------------------------------------+
+|            <<class>>               |
+|         ListingActivit             |
++------------------------------------+
+| -_prompts: string[]                |
+| -_random: Random                   |
++------------------------------------+
+| +ListingActivity()                 |
+| +Start(): void                     |
+| -GetRandomPrompt(): string         |
++------------------------------------+

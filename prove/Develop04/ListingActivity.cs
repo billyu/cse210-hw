@@ -40,9 +40,10 @@ public class ListingActivity : Activity
 
         // Display the prompt
         Console.WriteLine("List as many responses you can to the following prompt:");
-        Console.WriteLine($"\n --- {prompt} ---");
+        Console.WriteLine($" --- {prompt} ---");
         Console.Write("You may begin in: ");
         CountDown(5);
+        Console.WriteLine();
 
         // Set the end time 
         DateTime end = DateTime.Now.AddSeconds(_duration);
