@@ -13,6 +13,9 @@
         CountDown(int seconds): void - counts down from the given number of seconds
         Spinner(int seconds): void - displays a spinner for the given number of seconds
     Public Behavior:
+        GetName(): string - returns the name of the activity
+        GetDescription(): string - returns the description of the activity
+        GetDuration(): int - returns the duration of the activity
         DisplayWelcomeMessage(): void - displays a welcome message for the activity and asks for the duration
         DisplayCompleteMessage(): void - displays a message when the activity is finished
     Constructors:
@@ -79,5 +82,20 @@ public class Activity
         Spinner(3);
         Console.WriteLine($"\nYou have completed another {_duration} seconds of the {_name} Activity.");
         Spinner(3);
+    }
+
+    public string GetName()
+    {
+        return _name;
+    }
+
+    public string GetDescription()
+    {
+        return _description;
+    }
+
+    public int GetDuration()
+    {
+        return _duration;
     }
 }

@@ -10,6 +10,9 @@
 |            description: string)    |
 | +DisplayWelcomeMessage(): void     |
 | +DisplayCompleteMessage(): void    |
+| +GetName(): string                 |
+| +GetDescription(): string          |
+| +GetDuration(): int                |
 | #CountDown(seconds: int): void     |
 | #Spinner(seconds: int): void       |
 | #GetReadyPrompt(): void            |
